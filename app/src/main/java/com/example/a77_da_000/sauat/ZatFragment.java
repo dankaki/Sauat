@@ -301,7 +301,7 @@ public class ZatFragment extends Fragment {
                 else formedWord.setText(editText.getText());
             }
         });
-        /*view.post(new Runnable() {
+        view.post(new Runnable() {
                            @Override
                            public void run() {
                                // code you want to run when view is visible for the first time
@@ -310,28 +310,9 @@ public class ZatFragment extends Fragment {
                                formedWord.setHeight(height);
                            }
                        }
-        );*/
+        );
         return view;
     }
-
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
 
 
     public interface OnFragmentInteractionListener {
