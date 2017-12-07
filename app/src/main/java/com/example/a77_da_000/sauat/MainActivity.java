@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int pos) {
             switch(pos) {
                 case 0: return ZatFragment.newInstance();
-                case 1: return ZatFragment.newInstance();
+                case 1: return VerbFragment.newInstance();
                 default: return ZatFragment.newInstance();
             }
         }

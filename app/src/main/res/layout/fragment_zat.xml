@@ -6,12 +6,10 @@
     android:orientation="vertical"
     tools:context="com.example.a77_da_000.sauat.ZatFragment">
 
-
         <TextView
             android:id="@+id/formedWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:gravity="center"
             android:padding="8dp"
             android:text="@string/sample"
@@ -22,7 +20,6 @@
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:hint="@string/insert_the_word"
             android:inputType="textPersonName"
@@ -32,7 +29,6 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="4dp"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp"
@@ -42,14 +38,12 @@
             android:id="@+id/septik"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:layout_weight="1" />
+            android:layout_margin="4dp"/>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:textColor="@color/colorPrimary"
             android:layout_margin="4dp"
             android:textSize="20sp"
@@ -59,14 +53,12 @@
             android:id="@+id/zhak_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="4dp" />
 
         <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="4dp"
             android:text="@string/km1" />
 </LinearLayout>

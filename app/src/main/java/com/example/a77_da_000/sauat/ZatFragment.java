@@ -18,15 +18,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link ZatFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link ZatFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ZatFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
@@ -316,7 +307,6 @@ public class ZatFragment extends Fragment {
 
 
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
 }
