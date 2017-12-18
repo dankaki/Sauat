@@ -1,64 +1,175 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="8dp"
-    android:orientation="vertical"
-    tools:context="com.example.a77_da_000.sauat.ZatFragment">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/formedWord"
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/extra_keys">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:orientation="vertical"
             android:padding="8dp"
-            android:text="@string/sample"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="34sp" />
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/insert_the_word"
-            android:inputType="textPersonName"
-            android:layout_marginTop="4dp" />
+            tools:context="com.example.a77_da_000.sauat.ZatFragment">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp"
-            android:text="@string/sp1" />
+            <LinearLayout
+                android:id="@+id/word_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
 
-        <Spinner
-            android:id="@+id/septik"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"/>
+                <TextView
+                    android:id="@+id/formedWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/sample"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="34sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-            android:layout_margin="4dp"
-            android:textSize="20sp"
-            android:text="@string/zl1" />
+                <TextView
+                    android:id="@+id/latin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sample"
+                    android:textAlignment="center" />
 
-        <Spinner
-            android:id="@+id/zhak_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp" />
+            </LinearLayout>
 
-        <CheckBox
-            android:id="@+id/checkBox"
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="@string/insert_the_word"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/sp1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/septik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/zl1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/zhak_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/km1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/extra_keys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:padding="0dp"
+        android:stretchColumns="*">
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:text="@string/km1" />
-</LinearLayout>
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Ә" />
+
+            <Button
+                android:id="@+id/buttonI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/І" />
+
+            <Button
+                android:id="@+id/buttonN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Ң" />
+
+            <Button
+                android:id="@+id/buttonG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Ғ" />
+
+            <Button
+                android:id="@+id/buttonY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Ү" />
+
+            <Button
+                android:id="@+id/buttonU"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Ұ" />
+
+            <Button
+                android:id="@+id/buttonK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Қ" />
+
+            <Button
+                android:id="@+id/buttonO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Ө" />
+
+            <Button
+                android:id="@+id/buttonH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:text="@string/Һ" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

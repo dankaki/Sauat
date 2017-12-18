@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sauat</string>
+    <string name="app_name">SauApp</string>
     <string name="sample">Сөз</string>
     <string name="insert_the_word">Введите слово</string>
     <string name="sp1">Септік / Падеж:</string>
@@ -25,7 +25,44 @@
         <item>II(к) Сіздердің</item>
         <item>III(к) Олардың</item>
     </string-array>
+    <string-array name="verb_zhak_array">
+        <item>I(ж) Мен</item>
+        <item>II(ж) Сен</item>
+        <item>II(ж) Сіз</item>
+        <item>III(ж) Ол</item>
+        <item>I(к) Біз</item>
+        <item>II(к) Сендер</item>
+        <item>II(к) Сіздер</item>
+        <item>III(к) Олар</item>
+    </string-array>
+    <string-array name="tense_array">
+        <item>Осы / Настоящее</item>
+        <item>Болжалды келер / Предположительное будущее</item>
+        <item>Мақсатты келер / Намеревающее будущее</item>
+        <item>Ауыспалы келер / Переходное будущее</item>
+        <item>Жедел өткен / Недавно прошедшее</item>
+        <item>Бұрынғы өткен / Давно прошедшее</item>
+        <item>Ауыспалы өткен / Переходное прошедшее</item>
+        <item>Шартты рай / Условное наклонение</item>
+        <item>Бүйрық рай / Повелительное наклонение</item>
+        <item>Қалау рай / Желательное наклонение</item>
+    </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_verb">Жасау</string>
+    <string name="sample_latin_verb">zhasau</string>
+    <string name="Ә">Ә</string>
+    <string name="І">І</string>
+    <string name="Ң">Ң</string>
+    <string name="Ғ">Ғ</string>
+    <string name="Ү">Ү</string>
+    <string name="Ұ">Ұ</string>
+    <string name="Қ">Қ</string>
+    <string name="Ө">Ө</string>
+    <string name="Һ">Һ</string>
+    <string name="actionbar_spinner">ActionBar Spinner</string>
+    <string-array name="word_types">
+        <item>Зат есім</item>
+        <item>Етістік</item>
+    </string-array>
 </resources>

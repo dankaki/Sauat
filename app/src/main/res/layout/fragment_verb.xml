@@ -1,29 +1,173 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="8dp"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    tools:context="com.example.a77_da_000.sauat.VerbFragment">
+    android:animateLayoutChanges="true"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/extra_keys">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+            tools:context="com.example.a77_da_000.sauat.VerbFragment">
 
-    <TextView
-        android:id="@+id/formedWord"
-        android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:id="@+id/word_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/formedWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/sample_verb"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/latin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/sample_latin_verb"
+                    />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:text="@string/sample_verb"
+                android:hint="@string/insert_the_word"
+                android:inputType="textPersonName" />
+
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="4dp"
+                android:textSize="20sp"
+                android:text="@string/zl1" />
+
+            <Spinner
+                android:id="@+id/zhak_spinner"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="4dp"
+                android:textSize="20sp"
+                android:text="Уақыт, рай / Время, наклонение" />
+
+            <Spinner
+                android:id="@+id/tense_spinner"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+    <TableLayout
+        android:id="@+id/extra_keys"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="@string/sample"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="34sp" />
-
-    <EditText
-        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/insert_the_word"
-        android:inputType="textPersonName" />
+        android:layout_alignParentBottom="true"
+        android:padding="0dp"
+        android:background="#ffffff"
+        android:stretchColumns="*">
 
-</LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Ә" />
+
+            <Button
+                android:id="@+id/buttonI"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/І" />
+
+            <Button
+                android:id="@+id/buttonN"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Ң" />
+
+            <Button
+                android:id="@+id/buttonG"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Ғ" />
+
+            <Button
+                android:id="@+id/buttonY"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Ү" />
+
+            <Button
+                android:id="@+id/buttonU"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Ұ" />
+
+            <Button
+                android:id="@+id/buttonK"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Қ" />
+
+            <Button
+                android:id="@+id/buttonO"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Ө" />
+            <Button
+                android:id="@+id/buttonH"
+                android:layout_width="0dp"
+                android:layout_weight="0.125"
+                android:layout_height="wrap_content"
+                android:text="@string/Һ" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+
+
