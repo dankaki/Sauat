@@ -64,7 +64,7 @@ public class VerbFragment extends Fragment {
 
     void formWord() {
         TextView formedWord = (TextView) getView().findViewById(R.id.formedWord);
-        EditText editText = (EditText) getView().findViewById(R.id.editText);
+        EditText editText = (EditText) getView().findViewById(R.id.editTextVerb);
         Spinner zhakSpinner = (Spinner) getView().findViewById(R.id.zhak_spinner);
         Spinner tenseSpinner = (Spinner) getView().findViewById(R.id.tense_spinner);
         String input = editText.getText().toString();
@@ -522,7 +522,7 @@ public class VerbFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_verb, container, false);
         final TextView formedWord = (TextView) view.findViewById(R.id.formedWord);
-        final EditText editText = (EditText) view.findViewById(R.id.editText);
+        final EditText editText = (EditText) view.findViewById(R.id.editTextVerb);
         Spinner tenseSpinner = (Spinner) view.findViewById(R.id.tense_spinner);
         Spinner zhakSpinner = (Spinner) view.findViewById(R.id.zhak_spinner);
         final LinearLayout wordLayout = (LinearLayout) view.findViewById(R.id.word_layout);
@@ -765,7 +765,7 @@ public class VerbFragment extends Fragment {
                         wordLayout.setLayoutParams(params);
                         extraKeys.setVisibility(View.INVISIBLE);
                     }
-                    scrollView.fullScroll(ScrollView.FOCUS_UP);
+                    scrollView.smoothScrollTo(0,0);
                 }
                 lastVisibleDecorViewHeight = visibleDecorViewHeight;
             }

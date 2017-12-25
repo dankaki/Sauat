@@ -4,11 +4,13 @@
     android:animateLayoutChanges="true"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent">
+
     <ScrollView
         android:id="@+id/scrollview"
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
         android:layout_above="@+id/extra_keys">
+
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
@@ -42,14 +44,12 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textAlignment="center"
-                    android:text="@string/sample_latin_verb"
-                    />
+                    android:text="@string/sample_latin_verb" />
 
             </LinearLayout>
 
-
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editTextVerb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"

@@ -414,9 +414,11 @@ public class ZatFragment extends Fragment {
         final LinearLayout wordLayout = (LinearLayout) view.findViewById(R.id.word_layout);
         final TextView latinView = (TextView) view.findViewById(R.id.latin);
         final TableLayout extraKeys = (TableLayout) view.findViewById(R.id.extra_keys);
+
         extraKeys.setVisibility(View.INVISIBLE);
 
         editText.setText("Сөз");
+
 
         CheckBox checkBox = (CheckBox) view.findViewById(R.id.checkBox);
 
@@ -553,6 +555,7 @@ public class ZatFragment extends Fragment {
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
                 if (editText.getText().length() > 1) formWord();
                 else{
                     formedWord.setText(editText.getText());
@@ -622,6 +625,7 @@ public class ZatFragment extends Fragment {
                   }
         );
 
+
         final View decorView = getActivity().getWindow().getDecorView();
 
         decorView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -647,9 +651,10 @@ public class ZatFragment extends Fragment {
                         wordLayout.setLayoutParams(params);
                         extraKeys.setVisibility(View.INVISIBLE);
                     }
-                    scrollView.fullScroll(ScrollView.FOCUS_UP);
+                    scrollView.smoothScrollTo(0,0);
                 }
                 lastVisibleDecorViewHeight = visibleDecorViewHeight;
+
             }
         });
 
