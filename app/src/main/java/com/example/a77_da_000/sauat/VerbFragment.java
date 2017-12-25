@@ -469,6 +469,10 @@ public class VerbFragment extends Fragment {
                 case 'ч':
                     latinWord += "c'";
                     break;
+                case 'Ш':
+                case 'ш':
+                    latinWord += "s'";
+                    break;
                 case 'Щ':
                 case 'щ':
                     latinWord += "s'";
@@ -480,6 +484,11 @@ public class VerbFragment extends Fragment {
                 case 'І':
                 case 'і':
                     latinWord += "i";
+                    break;
+                case 'Ъ':
+                case 'ъ':
+                case 'Ь':
+                case 'ь':
                     break;
                 case 'Э':
                 case 'э':
