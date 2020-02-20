@@ -220,7 +220,7 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'Ә':
                 case 'ә':
-                    latinWord += "a'";
+                    latinWord += "á";
                     break;
                 case 'Б':
                 case 'б':
@@ -236,7 +236,7 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'Ғ':
                 case 'ғ':
-                    latinWord += "g'";
+                    latinWord += "ǵ";
                     break;
                 case 'Д':
                 case 'д':
@@ -260,11 +260,11 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'И':
                 case 'и':
-                    latinWord += "i'";
+                    latinWord += "i";
                     break;
                 case 'Й':
                 case 'й':
-                    latinWord += "i'";
+                    latinWord += "i";
                     break;
                 case 'К':
                 case 'к':
@@ -288,7 +288,7 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'Ң':
                 case 'ң':
-                    latinWord += "n'";
+                    latinWord += "ń";
                     break;
                 case 'О':
                 case 'о':
@@ -296,7 +296,7 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'Ө':
                 case 'ө':
-                    latinWord += "o'";
+                    latinWord += "ó";
                     break;
                 case 'П':
                 case 'п':
@@ -316,7 +316,7 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'У':
                 case 'у':
-                    latinWord += "y'";
+                    latinWord += "ý";
                     break;
                 case 'Ұ':
                 case 'ұ':
@@ -324,7 +324,7 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'Ү':
                 case 'ү':
-                    latinWord += "u'";
+                    latinWord += "ú";
                     break;
                 case 'Ф':
                 case 'ф':
@@ -342,15 +342,15 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'Ч':
                 case 'ч':
-                    latinWord += "c'";
+                    latinWord += "ch";
                     break;
                 case 'Ш':
                 case 'ш':
-                    latinWord += "s'";
+                    latinWord += "sh";
                     break;
                 case 'Щ':
                 case 'щ':
-                    latinWord += "s'";
+                    latinWord += "sh";
                     break;
                 case 'Ы':
                 case 'ы':
@@ -371,11 +371,11 @@ public class ZatFragment extends Fragment {
                     break;
                 case 'Ю':
                 case 'ю':
-                    latinWord += "i'y'";
+                    latinWord += "iy";
                     break;
                 case 'Я':
                 case 'я':
-                    latinWord += "i'a";
+                    latinWord += "ia";
                     break;
                 default:
                     latinWord += c[i];
